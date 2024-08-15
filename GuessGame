@@ -1,0 +1,19 @@
+const prompt = require("prompt-sync")();
+
+const number = Math.ceil(Math.random() * 20);
+
+let enteredNumber = prompt("Guess a number from 1 to 20: ");
+let count = 1;
+
+while (enteredNumber != number) {
+	if (enteredNumber == number) {
+		console.log("You Are Right!");
+	} else if (enteredNumber > number) {
+		console.log("That is to High");
+	} else if (enteredNumber < number) {
+		console.log("That is to Low");
+	}
+	enteredNumber = prompt("Please Try Again: ");
+	count++;
+}
+console.log(`You Are Right! It Only Took You ${count} Times! `);
