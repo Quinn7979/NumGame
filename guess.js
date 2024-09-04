@@ -6,7 +6,7 @@ let enteredNumber = prompt("Guess a number from 1 to 20: ");
 let numGuesses = 1;
 
 while (enteredNumber != randomNumber) {
-	if (enteredNumber == randomNumber) {
+	if (randomNumber) {
 		console.log(`You Are Right! ${randomNumber} It Only Took You ${numGuesses} Times!`);
 	} else if (enteredNumber > randomNumber) {
 		console.log("That is to High");
@@ -16,3 +16,5 @@ while (enteredNumber != randomNumber) {
 	enteredNumber = prompt("Please Try Again: ");
 	numGuesses++;
 }
+
+// if (enteredNumber == randomNumber)
