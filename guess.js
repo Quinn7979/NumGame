@@ -16,4 +16,4 @@ while (enteredNumber != randomNumber) {
 	enteredNumber = prompt("Please Try Again: ");
 	numGuesses++;
 }
-console.log(`You Are Right! It Only Took You ${numGuesses} Times! `);
+console.log(`You Are Right! It Only Took You ${numGuesses} Times!`);
