@@ -7,7 +7,7 @@ let numGuesses = 1;
 
 while (enteredNumber != randomNumber) {
 	if (enteredNumber == randomNumber) {
-		console.log("You Are Right!");
+		console.log(`You Are Right! It Only Took You ${numGuesses} Times!`);
 	} else if (enteredNumber > randomNumber) {
 		console.log("That is to High");
 	} else if (enteredNumber < randomNumber) {
@@ -16,5 +16,3 @@ while (enteredNumber != randomNumber) {
 	enteredNumber = prompt("Please Try Again: ");
 	numGuesses++;
 }
-
-console.log(`You Are Right! It Only Took You ${numGuesses} Times!`);
